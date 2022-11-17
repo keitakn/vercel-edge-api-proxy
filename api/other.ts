@@ -1,10 +1,12 @@
+import { createMessage } from '../feature';
+
 export const config = {
   runtime: 'experimental-edge',
 }
 
 export default async (req: Request) => {
   const body = {
-    message: 'other edge api!!',
+    message: createMessage('other api'),
   };
 
   return new Response(JSON.stringify(body), {
