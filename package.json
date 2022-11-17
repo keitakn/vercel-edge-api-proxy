@@ -1,0 +1,23 @@
+{
+  "name": "vercel-edge-api-proxy",
+  "version": "1.0.0",
+  "description": "VercelのEdge API Routeの検証用プロジェクト（長期メンテナンスはしない）",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keitakn/vercel-edge-api-proxy.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keitakn/vercel-edge-api-proxy/issues"
+  },
+  "homepage": "https://github.com/keitakn/vercel-edge-api-proxy#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.9.3"
+  }
+}
