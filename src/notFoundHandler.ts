@@ -1,12 +1,12 @@
 import { createErrorResponse } from './handler';
 
-export const indexHandler = async (request: Request): Promise<Response> => {
+export const notFoundHandler = async (request: Request): Promise<Response> => {
   const status = 404;
 
   const responseBody = {
     type: 'NotFound',
     title: `404 not found`,
-    detail: `requestMethod is ${request.method}`,
+    detail: `${request.url} is not found`,
     status,
   };
 
