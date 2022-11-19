@@ -2,6 +2,10 @@ import { Hono } from 'hono';
 
 const app = new Hono();
 
+app.all('/', (c) => {
+  return c.json({ message: 'Hello Hono! Index!' });
+});
+
 app.get('/api/hello', (c) => {
   return c.json({ message: 'Hello Hono!' });
 });
