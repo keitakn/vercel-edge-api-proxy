@@ -2,12 +2,12 @@ import { Hono } from 'hono';
 
 const app = new Hono();
 
-app.get('/api/hello', (c) => {
-  return c.json({ message: 'Hello Hono!' });
+app.all('/*', (c) => {
+  return c.json({ message: '404 Not Found by Hono' });
 });
 
-app.all('*', (c) => {
-  return c.json({ message: '404 Not Found by Hono' });
+app.get('/api/hello', (c) => {
+  return c.json({ message: 'Hello Hono!' });
 });
 
 export default async (req: Request) => {
