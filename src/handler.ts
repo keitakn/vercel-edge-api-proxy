@@ -1,4 +1,4 @@
-type ErrorBody = {
+type ProblemDetails = {
   type: string | 'about:blank';
   title: string;
   status: number;
@@ -26,6 +26,6 @@ export const createSuccessResponse = (
 };
 
 export const createErrorResponse = (
-  body: ErrorBody,
+  body: ProblemDetails,
   statusCode = defaultErrorStatus,
 ): Response => createSuccessResponse(body, statusCode);
