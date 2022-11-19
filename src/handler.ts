@@ -1,5 +1,5 @@
 type ProblemDetails = {
-  type: string | 'about:blank';
+  type: string;
   title: string;
   status: number;
   detail?: string;
