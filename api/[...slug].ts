@@ -10,6 +10,10 @@ app.get('/api/hello', (c) => {
   return c.json({ message: 'Hello Hono!' });
 });
 
+app.get('/api/hello/world', (c) => {
+  return c.json({ message: 'Hello Hono world!' });
+});
+
 app.all('*', (c) => {
   return c.json({ message: '404 Not Found by Hono' });
 });
